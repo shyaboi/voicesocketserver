@@ -3,7 +3,7 @@ const httpServer = require('http').createServer((req, res) => {
   // serve the index.html file
   res.setHeader('Content-Type', 'text/html');
   res.setHeader('Content-Length', Buffer.byteLength(1));
-//   res.end(content);
+  res.end('hiwrlkd');
 });
 const io = require('socket.io')(httpServer);
 io.on('connect', socket => {
