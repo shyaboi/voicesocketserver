@@ -11,7 +11,7 @@ io.on('connect', socket => {
 
 
 
-    socket.on('video', data => {
+    socket.on('audio', data => {
         console.log(data)
       socket.broadcast.emit('got', data)
     });
